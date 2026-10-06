@@ -63,9 +63,9 @@ body.is-loading .opening,body.is-loading .invitation,body.is-loading .music-togg
   position:absolute;
   inset:0;
   z-index:0;
-  background:rgba(148,132,101,.38);
-  -webkit-backdrop-filter:saturate(.66) sepia(.06) brightness(.91);
-  backdrop-filter:saturate(.66) sepia(.06) brightness(.91);
+  background:rgba(174,148,112,.22);
+  -webkit-backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
+  backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
   pointer-events:none
 }
 
@@ -209,9 +209,9 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
   position:absolute;
   z-index:0;
   inset:0;
-  background:rgba(148,132,101,.38);
-  -webkit-backdrop-filter:saturate(.66) sepia(.06) brightness(.91);
-  backdrop-filter:saturate(.66) sepia(.06) brightness(.91);
+  background:rgba(174,148,112,.22);
+  -webkit-backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
+  backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
   pointer-events:none
 }
 
@@ -300,9 +300,9 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
   height:100svh;
   margin:auto;
   background:
-    linear-gradient(rgba(148,132,101,.38),rgba(148,132,101,.38)),
+    linear-gradient(rgba(174,148,112,.22),rgba(174,148,112,.22)),
     url("images/background-mariage.png") center center/cover no-repeat;
-  filter:saturate(.64) sepia(.14) brightness(.86);
+  filter:saturate(.82) sepia(.05) brightness(.96);
   pointer-events:none
 }
 
