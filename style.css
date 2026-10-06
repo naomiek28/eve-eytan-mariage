@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap");
 :root {
-  --forest:#6f665d;
+  --forest:#6f6258;
   --ivory:#fff7ee;
   --gold:#b28b5d;
   --ink:#655247
@@ -63,9 +63,9 @@ body.is-loading .opening,body.is-loading .invitation,body.is-loading .music-togg
   position:absolute;
   inset:0;
   z-index:0;
-  background:rgba(174,148,112,.22);
-  -webkit-backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
-  backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
+  background:rgba(228,214,195,.10);
+  -webkit-backdrop-filter:blur(1px) saturate(.78) brightness(1.03);
+  backdrop-filter:blur(1px) saturate(.78) brightness(1.03);
   pointer-events:none
 }
 
@@ -179,7 +179,7 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
   color:#fff;
   border:1px solid rgba(255,255,255,.45);
   border-radius:50%;
-  background:rgba(16,47,39,.64);
+  background:rgba(111,82,67,.72);
   backdrop-filter:blur(8px)
 }
 
@@ -209,9 +209,9 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
   position:absolute;
   z-index:0;
   inset:0;
-  background:rgba(174,148,112,.22);
-  -webkit-backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
-  backdrop-filter:saturate(.82) sepia(.04) brightness(.97);
+  background:rgba(228,214,195,.10);
+  -webkit-backdrop-filter:blur(1px) saturate(.78) brightness(1.03);
+  backdrop-filter:blur(1px) saturate(.78) brightness(1.03);
   pointer-events:none
 }
 
@@ -288,7 +288,7 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
   display:none;
   width:100%;
   overflow:hidden;
-  background:#f6e8dc
+  background:transparent
 }
 
 .invitation::before {
@@ -297,12 +297,12 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
   inset:0;
   z-index:0;
   width:min(100vw,520px);
-  height:100svh;
+  height:auto;
   margin:auto;
   background:
-    linear-gradient(rgba(174,148,112,.22),rgba(174,148,112,.22)),
+    linear-gradient(rgba(228,214,195,.10),rgba(228,214,195,.10)),
     url("images/background-mariage.png") center center/cover no-repeat;
-  filter:saturate(.82) sepia(.05) brightness(.96);
+  filter:saturate(.78) sepia(.02) brightness(1.03);
   pointer-events:none
 }
 
@@ -518,7 +518,7 @@ body.invitation-open .arch-card > .countdown {
   margin:0 0 27px;
   padding:0 3px 22px;
   border-bottom:1px solid rgba(182,152,94,.45);
-  color:#3e4942;
+  color:#655247;
   font-family:"Cormorant Garamond",serif;
   font-size:clamp(11.5px,3.2vw,14px);
   font-weight:400;
@@ -706,7 +706,7 @@ body.invitation-open .arch-card > .countdown {
   justify-content:center;
   padding:105px 0 115px;
   text-align:center;
-  color:#17382f;
+  color:#85594f;
   background:transparent
 }
 
@@ -727,7 +727,7 @@ body.invitation-open .arch-card > .countdown {
   width:82%;
   max-width:355px;
   padding:52px 25px 48px;
-  color:#17382f;
+  color:#85594f;
   font-family:"Cormorant Garamond",serif;
   font-style:italic;
   border:1px solid rgba(173,138,81,.86);
@@ -754,7 +754,7 @@ body.invitation-open .arch-card > .countdown {
 
 .reception-heading {
   margin:0 0 27px;
-  color:#17382f;
+  color:#85594f;
   font:400 italic 17px/1.4 "Cormorant Garamond",serif;
   letter-spacing:.12em
 }
@@ -767,14 +767,14 @@ body.invitation-open .arch-card > .countdown {
 
 .reception-copy h2 {
   margin:0;
-  color:#17382f;
+  color:#85594f;
   font-size:44px;
   font-weight:600
 }
 
 .reception-place {
   margin:7px 0 54px;
-  color:#59675d;
+  color:#765f53;
   font-family:"Cormorant Garamond",serif;
   font-size:20px;
   font-weight:400;
@@ -784,7 +784,7 @@ body.invitation-open .arch-card > .countdown {
 
 .reception-sentence {
   margin:0;
-  color:#17382f;
+  color:#85594f;
   font-family:"Cormorant Garamond",serif;
   font-size:20px;
   font-weight:400;
@@ -847,7 +847,7 @@ body.invitation-open .arch-card > .countdown {
   position:relative;
   min-height:110svh;
   padding:125px 24px 115px;
-  color:#17382f;
+  color:#85594f;
   background:transparent
 }
 
@@ -863,7 +863,7 @@ body.invitation-open .arch-card > .countdown {
   margin:auto;
   padding:55px 28px 50px;
   text-align:center;
-  color:#17382f;
+  color:#85594f;
   font-family:"Cormorant Garamond",serif;
   font-style:italic;
   border:1px solid rgba(173,138,81,.78);
@@ -889,14 +889,14 @@ body.invitation-open .arch-card > .countdown {
 
 .section-kicker {
   margin:0;
-  color:#6d745f;
+  color:#8a6b5a;
   font:400 italic 17px/1.4 "Cormorant Garamond",serif;
   letter-spacing:.12em
 }
 
 .rsvp-copy h2 {
   margin:12px 0 0;
-  color:#17382f;
+  color:#85594f;
   font-size:46px;
   font-family:"Cormorant Garamond",serif;
   font-weight:400;
@@ -906,7 +906,7 @@ body.invitation-open .arch-card > .countdown {
 
 .rsvp-intro {
   margin:18px 0 48px;
-  color:#59675d;
+  color:#765f53;
   font-family:"Cormorant Garamond",serif;
   font-size:20px;
   font-style:italic
@@ -928,9 +928,9 @@ body.invitation-open .arch-card > .countdown {
 .rsvp-form input[type="text"],.rsvp-form select,.rsvp-form textarea {
   width:100%;
   padding:11px 2px;
-  color:#17382f;
+  color:#655247;
   border:0;
-  border-bottom:1px solid rgba(23,56,47,.42);
+  border-bottom:1px solid rgba(133,89,79,.42);
   border-radius:0;
   outline:0;
   background:transparent
@@ -946,7 +946,7 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .rsvp-form select option {
-  color:#17382f;
+  color:#655247;
   background:#fff9ef
 }
 
@@ -959,7 +959,7 @@ body.invitation-open .arch-card > .countdown {
   display:grid;
   gap:13px;
   margin:30px 0;
-  color:#17382f
+  color:#655247
 }
 
 .attendance-choice label {
@@ -995,7 +995,7 @@ body.invitation-open .arch-card > .countdown {
   padding:26px 15px 35px;
   text-align:center;
   color:rgba(255,255,255,.7);
-  background:#77675c;
+  background:#6f6258;
   font-size:12px
 }
 
