@@ -63,17 +63,17 @@ function openInvitation() {
 
 function createCalendarLinks() {
   const title = encodeURIComponent("Mariage Eve & Eytan");
-  const details = encodeURIComponent("Kabbalat Panim à 18h30. Houppa à 19h30.");
+  const details = encodeURIComponent("Houppa à 18h00, suivie de la réception.");
   const location = encodeURIComponent("Salle Ya'ar, 1 Yasmin Street, Mate Yehuda Regional Council 90, Israel");
   if (calendarLink) {
-    calendarLink.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261223T163000Z/20261223T213000Z&details=${details}&location=${location}`;
+    calendarLink.href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261223T160000Z/20261223T213000Z&details=${details}&location=${location}`;
   }
   if (appleCalendarLink) {
     const ics = [
       "BEGIN:VCALENDAR", "VERSION:2.0", "BEGIN:VEVENT",
-      "UID:mariage-eve-eytan-20261223", "DTSTART:20261223T163000Z",
+      "UID:mariage-eve-eytan-20261223", "DTSTART:20261223T160000Z",
       "DTEND:20261223T213000Z", "SUMMARY:Mariage Eve & Eytan",
-      "DESCRIPTION:Kabbalat Panim à 18h30. Houppa à 19h30.",
+      "DESCRIPTION:Houppa à 18h00, suivie de la réception.",
       "LOCATION:Salle Ya'ar, Moshav Ora, Jérusalem", "END:VEVENT", "END:VCALENDAR"
     ].join("\r\n");
     appleCalendarLink.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
@@ -115,7 +115,7 @@ async function handleRsvpSubmit(event) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         side, name,
-        attendance: attendance === "yes" ? "Oui, je viens" : "Non, je ne pourrai pas",
+        attendance: attendance === "yes" ? "Je serai présent" : "Je ne pourrais pas être présent",
         guestCount, message
       })
     });
