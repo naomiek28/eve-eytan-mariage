@@ -241,10 +241,11 @@ body.loader-finished .opening,body.loader-finished .music-toggle {
 
 .couple-names {
   margin:14px 0 0;
-  color:#85594f;
+  color:#aa826d;
   font:400 clamp(46px,12.2vw,59px)/.96 "Great Vibes",cursive;
   white-space:nowrap;
-  text-shadow:0 1px 10px rgba(255,250,241,.68)
+  text-shadow:0 1px 10px rgba(255,250,241,.68);
+  -webkit-text-fill-color:#aa826d
 }
 
 .couple-names span {
@@ -379,16 +380,20 @@ body.invitation-open .arch-card > .arch-venue {
   animation-delay:2.82s
 }
 
-body.invitation-open .arch-card > .memory-divider {
+body.invitation-open .arch-card > .arch-schedule {
   animation-delay:2.98s
 }
 
-body.invitation-open .arch-card > .grandfather-thought {
+body.invitation-open .arch-card > .memory-divider {
   animation-delay:3.14s
 }
 
+body.invitation-open .arch-card > .grandfather-thought {
+  animation-delay:3.30s
+}
+
 body.invitation-open .arch-card > .countdown {
-  animation-delay:3.38s
+  animation-delay:3.54s
 }
 
 /* ARCHE */
@@ -536,7 +541,11 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .family-eytan {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
   text-align:center;
+  padding-top:0;
   transform:translateX(4px)
 }
 
@@ -658,6 +667,21 @@ body.invitation-open .arch-card > .countdown {
   letter-spacing:.035em
 }
 
+.arch-schedule {
+  margin:0 auto 15px;
+  color:#765f53;
+  font-family:"Cormorant Garamond",serif;
+  font-size:16px;
+  font-style:italic;
+  font-weight:400;
+  line-height:1.45
+}
+
+.arch-schedule strong {
+  color:#8a6937;
+  font-weight:700
+}
+
 .memory-divider {
   display:block;
   width:70px;
@@ -767,7 +791,7 @@ body.invitation-open .arch-card > .countdown {
 
 .reception-copy h2 {
   margin:0;
-  color:#85594f;
+  color:#aa826d;
   font-size:44px;
   font-weight:600
 }
@@ -809,10 +833,10 @@ body.invitation-open .arch-card > .countdown {
   min-width:0;
   width:100%;
   padding:15px 18px;
-  color:#8a6545;
-  border:1px solid rgba(178,139,93,.58);
+  color:#fffaf3;
+  border:1px solid #aa826d;
   border-radius:999px;
-  background:rgba(255,251,245,.58);
+  background:#aa826d;
   box-shadow:none;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em;
@@ -823,18 +847,18 @@ body.invitation-open .arch-card > .countdown {
 
 .editorial-links a:hover {
   color:#fffaf3;
-  border-color:#b28b5d;
-  background:#b28b5d
+  border-color:#946d59;
+  background:#946d59
 }
 
 .editorial-links a:first-child {
   color:#fffaf3;
-  border-color:#b28b5d;
-  background:#b28b5d
+  border-color:#aa826d;
+  background:#aa826d
 }
 
 .editorial-links span {
-  color:#ad8a51
+  color:#fffaf3
 }
 
 .apple-calendar-link {
@@ -980,9 +1004,9 @@ body.invitation-open .arch-card > .countdown {
   padding:15px 18px;
   cursor:pointer;
   color:#fffaf3;
-  border:1px solid #b28b5d;
+  border:1px solid #aa826d;
   border-radius:999px;
-  background:#b28b5d;
+  background:#aa826d;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em
 }
@@ -1165,8 +1189,7 @@ body.invitation-open .arch-card > .countdown {
   display:none!important
 }
 
-.reception-copy h2,
-.reception-sentence { color:#85594f }
+.reception-copy h2 { color:#aa826d }
 .reception-place { color:#765f53 }
 .editorial-links a { min-height:50px }
 
