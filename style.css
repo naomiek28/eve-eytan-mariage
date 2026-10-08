@@ -88,6 +88,7 @@ body.is-loading .opening,body.is-loading .invitation,body.is-loading .music-togg
   width:min(28vw,115px);
   height:min(28vw,115px);
   transform:translateX(-50%);
+
   filter:drop-shadow(0 10px 18px rgba(65,43,33,.28)) brightness(1.08) contrast(1.08)
 }
 
@@ -461,7 +462,7 @@ body.invitation-open .arch-card > .countdown {
   position:relative;
   z-index:2;
   display:block;
-  width:min(30vw,125px);
+  width:min(25vw,105px);
   height:auto;
   filter:brightness(1.08) contrast(1.08) drop-shadow(0 12px 18px rgba(66,43,32,.24))
 }
@@ -998,15 +999,19 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .submit-link {
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
   width:100%;
   margin:50px auto 0;
-  padding:15px 18px;
+  padding:15px 5px 15px 31px;
   cursor:pointer;
   color:#fffaf3;
   border:1px solid #aa826d;
   border-radius:999px;
   background:#aa826d;
+  text-align:center;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em
 }
