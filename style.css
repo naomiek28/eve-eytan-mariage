@@ -606,13 +606,13 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .date-line {
-  margin:5px 0 5px;
-  color:#59483f;
+  margin:5px 0;
+  color:#765f53;
   font-family:"Cormorant Garamond",serif;
   font-size:clamp(18px,5vw,21px);
   font-weight:400;
   font-style:italic;
-  line-height:1.35
+  line-height:1.45;
 }
 
 .hebrew-date {
