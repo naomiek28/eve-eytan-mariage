@@ -133,12 +133,6 @@ openEnvelope?.addEventListener("click", openInvitation);
 musicToggle?.addEventListener("click", toggleMusic);
 weddingMusic?.addEventListener("play", updateMusicButton);
 weddingMusic?.addEventListener("pause", updateMusicButton);
-weddingMusic?.addEventListener("timeupdate", () => {
-  if (weddingMusic.currentTime >= 74) {
-    weddingMusic.pause();
-    weddingMusic.currentTime = 0;
-  }
-});
 rsvpForm?.addEventListener("submit", handleRsvpSubmit);
 
 updateCountdown();
