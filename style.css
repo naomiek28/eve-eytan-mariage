@@ -390,6 +390,7 @@ body.invitation-open .arch-card > .memory-divider {
 
 body.invitation-open .arch-card > .grandfather-thought {
   animation-delay:3.30s
+  
 }
 
 body.invitation-open .arch-card > .countdown {
@@ -651,7 +652,7 @@ body.invitation-open .arch-card > .countdown {
   margin:0 auto 19px;
   color:#765f53;
   font-family:"Cormorant Garamond",serif;
-  font-size:14px;
+  font-size:12px;
   font-style:italic;
   font-weight:400;
   line-height:1.4
