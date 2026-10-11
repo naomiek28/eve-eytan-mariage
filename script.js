@@ -125,7 +125,7 @@ async function handleRsvpSubmit(event) {
     alert("Une erreur est survenue. Merci de réessayer.");
   } finally {
     button.disabled = false;
-    button.innerHTML = "ENVOYER MA RÉPONSE <span>→</span>";
+    button.innerHTML = "ENVOYER MA RÉPONSE <span></span>";
   }
 }
 
