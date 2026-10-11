@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&family=Noto+Serif+Hebrew:wght@500;600&display=swap");
 :root {
   --forest:#6f6258;
   --ivory:#fff7ee;
@@ -390,7 +390,6 @@ body.invitation-open .arch-card > .memory-divider {
 
 body.invitation-open .arch-card > .grandfather-thought {
   animation-delay:3.30s
-  
 }
 
 body.invitation-open .arch-card > .countdown {
@@ -606,13 +605,13 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .date-line {
-  margin:5px 0;
-  color:#765f53;
+  margin:5px 0 5px;
+  color:#59483f;
   font-family:"Cormorant Garamond",serif;
   font-size:clamp(18px,5vw,21px);
   font-weight:400;
   font-style:italic;
-  line-height:1.45;
+  line-height:1.35
 }
 
 .hebrew-date {
@@ -652,7 +651,7 @@ body.invitation-open .arch-card > .countdown {
   margin:0 auto 19px;
   color:#765f53;
   font-family:"Cormorant Garamond",serif;
-  font-size:12px;
+  font-size:12.5px;
   font-style:italic;
   font-weight:400;
   line-height:1.4
@@ -792,9 +791,13 @@ body.invitation-open .arch-card > .countdown {
 
 .reception-copy h2 {
   margin:0;
-  color:#85594f;
+  color:#9a6f63;
+  font-family:"Noto Serif Hebrew","Times New Roman",serif;
   font-size:44px;
-  font-weight:600
+  font-weight:600;
+  line-height:1.2;
+  direction:rtl;
+  unicode-bidi:isolate
 }
 
 .reception-place {
@@ -835,9 +838,9 @@ body.invitation-open .arch-card > .countdown {
   width:100%;
   padding:15px 18px;
   color:#fffaf3;
-  border:1px solid #85594f;
+  border:1px solid #9a6f63;
   border-radius:999px;
-  background:#85594f;
+  background:#9a6f63;
   box-shadow:none;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em;
@@ -848,14 +851,14 @@ body.invitation-open .arch-card > .countdown {
 
 .editorial-links a:hover {
   color:#fffaf3;
-  border-color:#946d59;
-  background:#946d59
+  border-color:#a97d70;
+  background:#a97d70
 }
 
 .editorial-links a:first-child {
   color:#fffaf3;
-  border-color:#85594f;
-  background:#85594f
+  border-color:#9a6f63;
+  background:#9a6f63
 }
 
 .editorial-links span {
@@ -999,24 +1002,27 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .submit-link {
+  position:relative;
   display:flex;
   align-items:center;
   justify-content:center;
   gap:8px;
   width:100%;
   margin:50px auto 0;
-  padding:15px 5px 15px 31px;
+  padding:15px 42px;
   cursor:pointer;
   color:#fffaf3;
-  border:1px solid #85594f;
+  border:1px solid #9a6f63;
   border-radius:999px;
-  background:#85594f;
+  background:#9a6f63;
   text-align:center;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em
 }
 
 .submit-link span {
+  position:absolute;
+  right:20px;
   color:#fffaf3
 }
 
@@ -1194,7 +1200,7 @@ body.invitation-open .arch-card > .countdown {
   display:none!important
 }
 
-.reception-copy h2 { color:#85594f }
+.reception-copy h2 { color:#9a6f63 }
 .reception-place { color:#765f53 }
 .editorial-links a { min-height:50px }
 
