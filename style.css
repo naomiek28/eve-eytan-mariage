@@ -85,8 +85,8 @@ body.is-loading .opening,body.is-loading .invitation,body.is-loading .music-togg
   position:absolute;
   top:clamp(195px,28svh,245px);
   left:50%;
-  width:min(39vw,158px);
-  height:min(39vw,158px);
+  width:min(28vw,115px);
+  height:min(28vw,115px);
   transform:translateX(-50%);
   filter:drop-shadow(0 10px 18px rgba(65,43,33,.28)) brightness(1.08) contrast(1.08)
 }
