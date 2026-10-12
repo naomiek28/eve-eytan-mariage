@@ -781,6 +781,7 @@ body.invitation-open .arch-card > .countdown {
 
 .reception-heading {
   margin:0 0 18px;
+  transform:translateX(5px);
   color:#765f53;
   font:400 italic 17px/1.4 "Cormorant Garamond",serif;
   letter-spacing:.12em
@@ -797,6 +798,7 @@ body.invitation-open .arch-card > .countdown {
   width:100%;
   margin:0;
   text-align:center;
+  transform:translateX(-5px);
   color:#9c7066;
   font-family:"Noto Serif Hebrew","Times New Roman",serif;
   font-size:44px;
