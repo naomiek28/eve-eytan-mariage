@@ -751,6 +751,9 @@ body.invitation-open .arch-card > .countdown {
   width:82%;
   max-width:355px;
   padding:52px 25px 48px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   color:#85594f;
   font-family:"Cormorant Garamond",serif;
   font-style:italic;
@@ -794,7 +797,7 @@ body.invitation-open .arch-card > .countdown {
   width:100%;
   margin:0;
   text-align:center;
-  color:#aa826d;
+  color:#9c7066;
   font-family:"Noto Serif Hebrew","Times New Roman",serif;
   font-size:44px;
   font-weight:600;
@@ -806,7 +809,7 @@ body.invitation-open .arch-card > .countdown {
 .reception-place {
   display:block;
   width:100%;
-  margin:7px 0 30px;
+  margin:7px auto 30px;
   text-align:center;
   color:#765f53;
   font-family:"Cormorant Garamond",serif;
@@ -832,6 +835,7 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .editorial-links {
+  width:100%;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -844,9 +848,9 @@ body.invitation-open .arch-card > .countdown {
   width:100%;
   padding:15px 18px;
   color:#fffaf3;
-  border:1px solid #aa826d;
+  border:1px solid #9c7066;
   border-radius:999px;
-  background:#aa826d;
+  background:#9c7066;
   box-shadow:none;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em;
@@ -857,14 +861,14 @@ body.invitation-open .arch-card > .countdown {
 
 .editorial-links a:hover {
   color:#fffaf3;
-  border-color:#b78f7b;
-  background:#b78f7b
+  border-color:#aa8076;
+  background:#aa8076
 }
 
 .editorial-links a:first-child {
   color:#fffaf3;
-  border-color:#aa826d;
-  background:#aa826d
+  border-color:#9c7066;
+  background:#9c7066
 }
 
 .editorial-links span {
@@ -1018,9 +1022,9 @@ body.invitation-open .arch-card > .countdown {
   padding:15px 10px;
   cursor:pointer;
   color:#fffaf3;
-  border:1px solid #aa826d;
+  border:1px solid #9c7066;
   border-radius:999px;
-  background:#aa826d;
+  background:#9c7066;
   text-align:center;
   font:500 italic clamp(12px,3.6vw,16px)/1.25 "Cormorant Garamond",serif;
   letter-spacing:.04em;
@@ -1207,7 +1211,7 @@ body.invitation-open .arch-card > .countdown {
   display:none!important
 }
 
-.reception-copy h2 { color:#aa826d }
+.reception-copy h2 { color:#9c7066 }
 .reception-place { color:#765f53 }
 .editorial-links a { min-height:50px }
 
