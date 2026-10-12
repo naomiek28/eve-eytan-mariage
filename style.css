@@ -85,8 +85,8 @@ body.is-loading .opening,body.is-loading .invitation,body.is-loading .music-togg
   position:absolute;
   top:clamp(195px,28svh,245px);
   left:50%;
-  width:min(28vw,115px);
-  height:min(28vw,115px);
+  width:min(39vw,158px);
+  height:min(39vw,158px);
   transform:translateX(-50%);
   filter:drop-shadow(0 10px 18px rgba(65,43,33,.28)) brightness(1.08) contrast(1.08)
 }
@@ -790,8 +790,11 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .reception-copy h2 {
+  display:block;
+  width:100%;
   margin:0;
-  color:#9a6f63;
+  text-align:center;
+  color:#aa826d;
   font-family:"Noto Serif Hebrew","Times New Roman",serif;
   font-size:44px;
   font-weight:600;
@@ -801,7 +804,10 @@ body.invitation-open .arch-card > .countdown {
 }
 
 .reception-place {
+  display:block;
+  width:100%;
   margin:7px 0 30px;
+  text-align:center;
   color:#765f53;
   font-family:"Cormorant Garamond",serif;
   font-size:20px;
@@ -838,9 +844,9 @@ body.invitation-open .arch-card > .countdown {
   width:100%;
   padding:15px 18px;
   color:#fffaf3;
-  border:1px solid #9a6f63;
+  border:1px solid #aa826d;
   border-radius:999px;
-  background:#9a6f63;
+  background:#aa826d;
   box-shadow:none;
   font:500 italic 16px/1.25 "Cormorant Garamond",serif;
   letter-spacing:.08em;
@@ -851,14 +857,14 @@ body.invitation-open .arch-card > .countdown {
 
 .editorial-links a:hover {
   color:#fffaf3;
-  border-color:#a97d70;
-  background:#a97d70
+  border-color:#b78f7b;
+  background:#b78f7b
 }
 
 .editorial-links a:first-child {
   color:#fffaf3;
-  border-color:#9a6f63;
-  background:#9a6f63
+  border-color:#aa826d;
+  background:#aa826d
 }
 
 .editorial-links span {
@@ -1009,20 +1015,21 @@ body.invitation-open .arch-card > .countdown {
   gap:8px;
   width:100%;
   margin:50px auto 0;
-  padding:15px 42px;
+  padding:15px 10px;
   cursor:pointer;
   color:#fffaf3;
-  border:1px solid #9a6f63;
+  border:1px solid #aa826d;
   border-radius:999px;
-  background:#9a6f63;
+  background:#aa826d;
   text-align:center;
-  font:500 italic 16px/1.25 "Cormorant Garamond",serif;
-  letter-spacing:.08em
+  font:500 italic clamp(12px,3.6vw,16px)/1.25 "Cormorant Garamond",serif;
+  letter-spacing:.04em;
+  white-space:nowrap
 }
 
 .submit-link span {
   position:absolute;
-  right:20px;
+  right:14px;
   color:#fffaf3
 }
 
@@ -1200,7 +1207,7 @@ body.invitation-open .arch-card > .countdown {
   display:none!important
 }
 
-.reception-copy h2 { color:#9a6f63 }
+.reception-copy h2 { color:#aa826d }
 .reception-place { color:#765f53 }
 .editorial-links a { min-height:50px }
 
